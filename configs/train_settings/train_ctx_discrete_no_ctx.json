@@ -1,0 +1,21 @@
+{
+    "hid": [
+        64,
+        64
+    ],
+    "gamma": 0.995,
+    "eval_episodes": 1,
+    "train_pi_iters": 80,
+    "train_v_iters": 80,
+    "epochs": 3000,
+    "steps_per_epoch": 4000,
+    "max_ep_len": 1000,
+    "seed": 0,
+    "use_kl_regularizer": true,
+    "normalize_ctx": true,
+    "whiten_l_dr": true,
+    "DR_learn_sample_from": "test",
+    "render": false,
+    "cat_context": false,
+    "context_samples": 10
+}

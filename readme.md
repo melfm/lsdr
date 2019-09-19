@@ -2,7 +2,7 @@
 LSDR - Learning the Sweet-spot Distribution Range
 ==================================
 
-This repository contains the code for [Learning Domain Randomization Distributions for Training Robust Locomotion Policies](https://arxiv.org/submit/2847152) paper and is built on top of the PPO implementation from OpenAI's [spinningup.openai.com](https://spinningup.openai.com) code.
+This repository contains the code for [Learning Domain Randomization Distributions for Training Robust Locomotion Policies](https://arxiv.org/abs/1906.00410) paper and is built on top of the PPO implementation from OpenAI's [spinningup.openai.com](https://spinningup.openai.com) code.
 
 ## Getting Started
 Implemented and tested on Ubuntu 16.04 with Python 3.6, Tensorflow 1.14.0 and torch 1.1.0 (note that we use torch for the distribution learning part).

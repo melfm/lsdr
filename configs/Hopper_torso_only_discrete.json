@@ -1,0 +1,45 @@
+[
+    {
+        "experiment:0001": {
+            "env": "hopper-torso-only",
+            "id": 1,
+            "train_family": "discrete",
+            "train_ph": "DR_LEARNED"
+        }
+    },
+    {
+        "experiment:0002": {
+            "env": "hopper-torso-only",
+            "id": 2,
+            "test_family": "discrete",
+            "test_ph": "FINE_TUNE_LEARN_CTX",
+            "train_experiment": "experiment:0001"
+        }
+    },
+    {
+        "train_dist:0001": {
+            "env": "hopper-torso-only",
+            "params": "[[\"float64\", [2], [-0.1, 0.2]], [\"int64\", [], [100]]]",
+            "run": 0,
+            "type": "discrete"
+        }
+
+    },
+    {
+        "test_dist:0001": {
+            "env": "hopper-torso-only",
+            "params": "[[\"float64\", [2], [-0.1, 0.2]], [\"int64\", [], [100]]]",
+            "run": 0,
+	    "train_run_id": 0,
+            "type": "discrete"
+        }
+    },
+    {
+        "tran_dist:discrete": {
+            "env": "hopper-torso-only",
+            "params": "[[\"float64\", [2], [0.01, 0.09]]]",
+            "run": 0,
+            "type": "discrete"
+        }
+    }
+]

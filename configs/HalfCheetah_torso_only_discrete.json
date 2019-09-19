@@ -1,0 +1,43 @@
+[
+    {
+        "experiment:0001": {
+            "env": "half-cheetah-torso",
+            "id": 1,
+            "train_family": "discrete",
+            "train_ph": "DR_LEARNED"
+        }
+    },
+    {
+        "experiment:0002": {
+            "env": "half-cheetah-torso",
+            "id": 2,
+            "test_family": "discrete",
+            "test_ph": "FINE_TUNE_LEARN_CTX",
+            "train_experiment": "experiment:0001"
+        }
+    },
+    {
+        "train_dist:discrete": {
+            "env": "half-cheetah-torso",
+            "params": "[[\"float64\", [2], [-0.1, 1.3]], [\"int64\", [], 100]]",
+            "run": 0,
+            "type": "discrete"
+        }
+    },
+    {
+        "test_dist:discrete": {
+            "env": "half-cheetah-torso",
+            "params": "[[\"float64\", [2], [-0.1, 1.3]], [\"int64\", [], 100]]",
+            "run": 0,
+            "type": "discrete"
+        }
+    },
+    {
+        "tran_dist:discrete": {
+            "env": "half-cheetah-torso",
+            "params": "[[\"float64\", [2], [0.1, 0.5]]]",
+            "run": 0,
+            "type": "discrete"
+        }
+    }
+]

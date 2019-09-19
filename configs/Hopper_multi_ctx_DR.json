@@ -1,0 +1,44 @@
+[
+    {
+        "experiment:0001": {
+            "env": "hopper",
+            "id": 1,
+            "train_family": "discrete",
+            "train_ph": "DR_FIXED"
+        }
+    },
+    {
+        "experiment:0002": {
+            "env": "hopper",
+            "id": 2,
+            "test_family": "discrete",
+            "test_ph": "FINE_TUNE",
+            "train_experiment": "experiment:0001"
+        }
+    },
+    {
+        "train_dist:0001": {
+            "env": "hopper",
+            "params": "[[\"float64\", [2], [-3.0, 10.0]], [\"float64\", [2], [1e-3, 0.2]], [\"float64\", [2], [-10.0, 30.0]], [\"int64\", [], [4]]]",
+            "run": 0,
+            "type": "discrete"
+        }
+    },
+    {
+        "test_dist:0001": {
+            "env": "hopper",
+            "params": "[[\"float64\", [2], [-3.0, 10.0]], [\"float64\", [2], [1e-3, 0.2]], [\"float64\", [2], [-10.0, 30.0]], [\"int64\", [], [4]]]",
+            "run": 0,
+            "train_run_id": 0,
+            "type": "discrete"
+        }
+    },
+    {
+        "tran_dist:discrete": {
+            "env": "hopper",
+            "params": "[[\"float64\", [2], [-3.0, 10.0]], [\"float64\", [2], [1e-3, 0.2]], [\"float64\", [2], [-10.0, 30.0]], [\"int64\", [], [4]]]",
+            "run": 0,
+            "type": "discrete"
+        }
+    }
+]
